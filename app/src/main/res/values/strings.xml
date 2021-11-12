@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">JobPost</string>
+    <array name="Nationality">
+        <item>Nationality</item>
+        <item>Nepali</item>
+        <item>Chinanese</item>
+        <item>Indian</item>
+        <item>others</item>
+    </array>
+    <array name="functional">
+        <item>Functional Area:</item>
+        <item>Android</item>
+        <item>PHP</item>
+        <item>JAVA</item>
+        <item>others</item>
+    </array>
+    <array name="salary">
+        <item>Salary</item>
+        <item>Negotiable</item>
+        <item>10000-15000</item>
+        <item>15000-20000</item>
+        <item>20000-25000</item>
+        <item>25000-30000</item>
+        <item>Above 30000</item>
+    </array>
+    <array name="education">
+        <item>Educational Qualification</item>
+        <item>BE Computer</item>
+        <item>BE Com and Elex</item>
+        <item>BCSIT</item>
+        <item>BIT</item>
+        <item>BBS</item>
+        <item>BBA</item>
+    </array>
+    <string name="title_activity_navigation">Navigation</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+</resources>

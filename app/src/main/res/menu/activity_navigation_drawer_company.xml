@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard_company"
+            android:icon="@drawable/home_icon"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_profile_company"
+            android:icon="@drawable/profile_icon"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_education_Applied_Candidate"
+            android:icon="@drawable/apc_icon"
+            android:title="Applied Candidate" />
+
+        <item
+            android:id="@+id/nav_jobs_company"
+            android:icon="@drawable/jobpost_icon"
+            android:title="Job Post" />
+        <item
+            android:id="@+id/nav_logout_company"
+            android:icon="@drawable/logout_icon"
+            android:title="Logout"
+            android:visible="false"/>
+
+    </group>
+
+</menu>

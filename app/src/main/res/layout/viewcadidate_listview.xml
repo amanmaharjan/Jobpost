@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Candidate Details"
+        android:background="@android:color/white"
+        android:textSize="30dp"
+        android:textColor="@color/colorPrimary"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/candidate_FirstName"
+            android:textSize="20dp"
+            style="@style/textColor"/>
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/candidate_LastName"
+            android:textSize="20dp"
+            style="@style/textColor"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/candidate_email"
+        android:textSize="20dp"
+        style="@style/textColor"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/candidate_Contact"
+        android:textSize="20dp"
+        style="@style/textColor"
+
+        />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/details"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:text="Details"
+        style="@style/ButtonColor"
+        android:background="@drawable/button"
+
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Job Details"
+        android:background="@android:color/white"
+        android:textSize="30dp"
+        android:textColor="@color/colorPrimary"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:paddingBottom="5dp"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Job Title: "
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            style="@style/textColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_CJJobTitle"
+            android:textSize="20sp"
+            style="@style/textColor"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:paddingBottom="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Job Description: "
+            android:textSize="20sp"
+            style="@style/textColor"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_CJJobDescription"
+            android:textSize="20sp"
+            style="@style/textColor"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:paddingBottom="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seats Available: "
+            android:textSize="20sp"
+            style="@style/textColor"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_CJSeatsAvailable"
+            android:textSize="20sp"
+            style="@style/textColor"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:paddingBottom="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Experience Required(in Years): "
+
+            android:textSize="20sp"
+            style="@style/textColor"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_CJExperienceReq"
+            android:textSize="20sp"
+            style="@style/textColor"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Job Catagory: "
+            android:textSize="20sp"
+            android:id="@+id/textView"
+            style="@style/textColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_CJspinnerJobC"
+            android:textSize="20sp"
+            style="@style/textColor"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:paddingBottom="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salary:"
+
+            android:textSize="20sp"
+            android:layout_weight="1"
+            style="@style/textColor"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_CJspinnerOsalary"
+            android:textSize="20sp"
+            style="@style/textColor"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minimum Education:"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:id="@+id/textView2"
+            style="@style/textColor"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_CJ0spinnerMinEdu"
+            android:textSize="20sp"
+            style="@style/textColor"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:paddingBottom="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Job Type:"
+
+            android:textSize="20sp"
+            android:layout_weight="1"
+            style="@style/textColor"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_CJJobType"
+            android:textSize="20sp"
+            style="@style/textColor"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@android:color/white"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/colorAccent"/>
+
+</LinearLayout>

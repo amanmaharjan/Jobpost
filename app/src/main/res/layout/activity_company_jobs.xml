@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.welcome.jobpost.CompanyJobs"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#f1f1f1"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/border"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Job Post by Company"
+            android:textSize="25sp"
+            android:layout_gravity="center" />
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_Cjobtitle"
+            android:hint="Job Title"
+            android:background="@drawable/viewborder"
+            style="@style/viewMargin"
+            />
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_SeatsA"
+            android:hint="Seats Available"
+            android:background="@drawable/viewborder"
+            style="@style/viewMargin"
+            />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_CjobDes"
+            android:hint="Job Description"
+            android:background="@drawable/viewborder"
+            style="@style/viewMargin"
+            />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_ExperienceR"
+            android:hint="Experience Required(in Years)"
+            android:background="@drawable/viewborder"
+            style="@style/viewMargin"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="@drawable/viewborder"
+            style="@style/viewMargin">
+
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/CspinnerJobC"
+                android:entries="@array/functional"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/viewborder"
+            style="@style/viewMargin">
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/CspinnerOsalary"
+                android:entries="@array/salary"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="@drawable/viewborder"
+            style="@style/viewMargin">
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/CspinnerMinEdu"
+                android:entries="@array/education"
+                />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Type: "
+
+                android:textSize="20sp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/rgPart">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Full Time"
+                    android:id="@+id/fulltime"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Part Time"
+                    android:id="@+id/parttime"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contract"
+                    android:id="@+id/contract"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/btn_CpSubmit"
+
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            style="@style/ButtonColor"
+            />
+    </LinearLayout>
+
+
+
+</ScrollView>
+

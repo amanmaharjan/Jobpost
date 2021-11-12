@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?><ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#f1f1f1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:background="@drawable/border"
+        android:paddingLeft="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile "
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:paddingBottom="20dp"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_logo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logo:"
+                android:textSize="20sp"
+               />
+
+            <Button
+                android:id="@+id/btn_Edchoosefile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="choose file"
+                />
+
+        </LinearLayout>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                >
+                <EditText
+                    android:id="@+id/ed_EdCname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Company Name"
+                    android:background="@drawable/viewborder"
+                    style="@style/viewMargin"/>
+            </TableRow>
+            <TableRow>
+                <EditText
+                    android:id="@+id/ed_EdCaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Address"
+                    android:background="@drawable/viewborder"
+                    style="@style/viewMargin"
+                    />
+
+
+            </TableRow>
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/ed_EdCemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/viewborder"
+                    android:hint="Email"
+                    android:focusable="false"
+                    style="@style/viewMargin"/>
+            </TableRow>
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/ed_EdCcontactPerson"
+                    style="@style/viewMargin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/viewborder"
+                    android:hint="Contact Person"
+                    />
+            </TableRow>
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/ed_EdCcontactPersonPhone"
+                    style="@style/viewMargin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/viewborder"
+                    android:hint="Contact Person Phone"
+                    android:inputType="number"/>
+            </TableRow>
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/ed_EdCusername"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="User Name"
+                    android:background="@drawable/viewborder"
+                    style="@style/viewMargin"/>
+            </TableRow>
+            <TableRow>
+                <EditText
+                    android:id="@+id/ed_EdCPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:background="@drawable/viewborder"
+                    style="@style/viewMargin"/>
+            </TableRow>
+            <TableRow>
+                <EditText
+                    android:id="@+id/ed_EdCConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Conform Password"
+                    android:background="@drawable/viewborder"
+                    style="@style/viewMargin"/>
+            </TableRow>
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/ed_EdCabout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="About"
+                    style="@style/viewMargin"
+                    android:background="@drawable/viewborder"/>
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:id="@+id/btn_EdCUpdate"
+                    style="@style/ButtonColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button"
+                    android:text="Update" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

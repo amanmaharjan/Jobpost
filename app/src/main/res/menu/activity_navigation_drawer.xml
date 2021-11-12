@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/home_icon"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile_icon"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_education"
+            android:icon="@drawable/education_icon"
+            android:title="Education" />
+
+        <item
+            android:id="@+id/nav_experince"
+            android:icon="@drawable/experience_icon"
+            android:title="Experince" />
+        <item
+            android:id="@+id/nav_skills"
+            android:icon="@drawable/training_logo"
+            android:title="Training" />
+        <item
+            android:id="@+id/nav_cv"
+            android:icon="@drawable/sd_icon"
+            android:title="CV" />
+        <item
+            android:id="@+id/nav_jobs"
+            android:icon="@drawable/job_icon"
+            android:title="Jobs" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout_icon"
+            android:title="Logout"
+            android:visible="false" />
+    </group>
+
+</menu>

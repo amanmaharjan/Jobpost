@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout_cv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+    <include
+        layout="@layout/app_bar_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.welcome.jobpost.CV"
+    android:orientation="vertical"
+    android:paddingTop="60dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/border"
+        android:paddingLeft="10dp"
+       android:paddingBottom="10dp" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CV"
+            android:textSize="25sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload C.V:"
+                android:textSize="20sp"/>
+
+                <Button
+                    android:id="@+id/btn_Jbrowser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select"
+                    android:background="@drawable/button"
+                    style="@style/ButtonColor"/>
+
+                <Button
+                    android:id="@+id/buttonUpload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload"
+                    android:background="@drawable/button"
+                    style="@style/ButtonColor"
+                    android:visibility="invisible"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View C.V: "
+                android:textSize="20sp"/>
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Download"
+                    android:id="@+id/btn_jDownload"
+                android:background="@drawable/button"
+                style="@style/ButtonColor"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view_cv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_navigation"
+        app:menu="@menu/activity_navigation_drawer" />
+</android.support.v4.widget.DrawerLayout>
+

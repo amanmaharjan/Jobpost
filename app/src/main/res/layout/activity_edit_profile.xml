@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#f1f1f1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/border"
+        android:weightSum="13"
+        android:paddingLeft="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textSize="25sp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/ed_JeFname"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:background="@drawable/viewborder"
+                style="@style/viewMargin"
+                />
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ed_JeLname"
+                android:hint="Last Name"
+                android:background="@drawable/viewborder"
+                style="@style/viewMargin"
+                />
+        </LinearLayout>
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_JecAddress"
+            android:hint="Current Address"
+            android:layout_weight="1"
+            android:background="@drawable/viewborder"
+            style="@style/viewMargin"/>
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_Jemob"
+            android:hint="Mobile no."
+            android:layout_weight="1"
+            android:background="@drawable/viewborder"
+            style="@style/viewMargin"
+            android:inputType="number"/>
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_JeDob"
+            android:hint="Date of Birth(YY/MM/DD)"
+            android:layout_weight="1"
+            android:background="@drawable/viewborder"
+            style="@style/viewMargin"
+            android:inputType="date"/>
+
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_Jeemail"
+            android:hint="Email"
+            android:layout_weight="1"
+            android:background="@drawable/viewborder"
+            android:focusable="false"
+            style="@style/viewMargin"/>
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_Jeusername"
+            android:hint="UserName"
+            android:layout_weight="1"
+            android:background="@drawable/viewborder"
+            style="@style/viewMargin"/>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_JePassword"
+            android:hint="Password"
+            android:layout_weight="1"
+            android:background="@drawable/viewborder"
+            style="@style/viewMargin"/>
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ed_JeConformPassword"
+            android:hint="Conform Password"
+            android:layout_weight="1"
+            android:background="@drawable/viewborder"
+            style="@style/viewMargin"/>
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/viewborder"
+            style="@style/viewMargin">
+            <Spinner
+                android:id="@+id/JeNationalitySpiner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/Nationality">
+
+            </Spinner>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/viewborder"
+            style="@style/viewMargin">
+
+            <Spinner
+                android:id="@+id/JefuncationSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/functional"
+                android:layout_weight="1">
+
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/viewborder"
+            style="@style/viewMargin" >
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/salary"
+                android:id="@+id/JeSalarySpinner"
+                android:layout_weight="1">
+
+            </Spinner>
+
+        </LinearLayout>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:id="@+id/genderJeRadioB"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:id="@+id/rbtn_Jemale"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:id="@+id/rbtn_Jefemale"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Others"
+                android:id="@+id/rbtn_Jeothers"/>
+
+
+        </RadioGroup>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_Jeedit"
+            android:text="Update"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            style="@style/ButtonColor"
+
+            />
+    </LinearLayout>
+
+
+</ScrollView>

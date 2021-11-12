@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="com.example.welcome.jobpost.Welcome"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    style="@style/AppTheme"
+
+    android:background="#ffffff">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/itjobsnepal"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="40dp"
+            android:background="#fff"
+            android:paddingTop="10dp">
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:padding="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IT Jobs Nepal"
+                        android:textSize="25sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        >
+                        <TextView
+                            android:layout_width="190dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_us"
+                            android:text="Email: "
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_weight="1"
+                            />
+
+
+                        <EditText
+                            android:id="@+id/ed_us"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/txt_pw"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Password:"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:password="true"
+                        android:id="@+id/ed_pw"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/btn_jobseeker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Job Seeker Login"
+                        android:layout_weight="1"
+                        android:background="@drawable/button"
+                        style="@style/ButtonColor"/>
+
+                    <Button
+                        android:id="@+id/btn_employer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Company Login "
+                        android:layout_weight="1"
+                        android:background="@drawable/button"
+                        style="@style/ButtonColor"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2" >
+
+                    <Button
+                        android:id="@+id/btn_jobseekerSignup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Job Seeker Sign Up"
+                        android:layout_weight="1"
+                        android:background="@drawable/button"
+                        style="@style/ButtonColor"/>
+
+                    <Button
+                        android:id="@+id/btn_employerSignup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Company SignUp "
+                        android:background="@drawable/button"
+                        style="@style/ButtonColor"
+
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:padding="10dp"
+                    >
+
+                    <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Forget Password ?"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/resetJobseeker"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Forget Password ?"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/resetCompany"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
